@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="支持答对自动下一题、答错停留学习的考试刷题工具">
+  <title>刷题学习助手</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">✓</span><span>刷题学习助手</span></div>
+    <div class="progress-wrap">
+      <div class="progress-copy"><strong id="progressText">第 1 / 5 题</strong><span id="progressPercent">20%</span></div>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+    </div>
+    <div class="header-actions"><button class="ghost small">错题本 <b id="wrongCount">0</b></button><button class="ghost small">退出练习</button></div>
+  </header>
+
+  <main class="layout">
+    <aside class="panel answer-sheet">
+      <div class="panel-title"><h2>答题卡</h2><span id="completedCount">0/5</span></div>
+      <div id="questionGrid" class="question-grid" aria-label="题目导航"></div>
+      <div class="legend"><span><i class="dot done"></i>已答</span><span><i class="dot current"></i>当前</span><span><i class="dot todo"></i>未答</span></div>
+      <div class="sheet-tip">点击题号可以快速跳转</div>
+    </aside>
+
+    <section class="question-card">
+      <div class="tags"><span class="tag blue">单选题</span><span id="category" class="tag">计算机基础</span></div>
+      <h1 id="questionTitle">题目加载中…</h1>
+      <div id="options" class="options"></div>
+      <p id="hint" class="hint">请选择一个答案</p>
+      <section id="feedback" class="feedback hidden" aria-live="polite">
+        <div class="feedback-head"><span id="feedbackIcon"></span><strong id="feedbackTitle"></strong></div>
+        <p id="feedbackAnswer"></p><p id="explanation"></p>
+      </section>
+      <div class="bottom-actions">
+        <button id="prevBtn" class="secondary">← 上一题</button>
+        <span class="auto-note"><i></i>答对后自动进入下一题</span>
+        <button id="submitBtn" class="primary">提交答案</button>
+        <button id="nextBtn" class="secondary">下一题 →</button>
+      </div>
+    </section>
+
+    <aside class="right-column">
+      <section class="panel study-mode">
+        <div class="mode-head"><h2>学习模式</h2><label class="switch"><input id="modeToggle" type="checkbox" checked><span></span></label></div>
+        <div class="rule success"><b>✓</b><div><strong>答对</strong><small>自动进入下一题</small></div></div>
+        <div class="rule warning"><b>!</b><div><strong>答错</strong><small>停留并显示解析</small></div></div>
+        <div class="rule neutral"><b>↔</b><div><strong>自由切换</strong><small>随时返回上一题</small></div></div>
+      </section>
+      <section class="panel stats">
+        <h2>本次练习</h2>
+        <div class="stat-row"><span>正确</span><strong class="green" id="correctStat">0</strong></div>
+        <div class="stat-row"><span>错误</span><strong class="orange" id="wrongStat">0</strong></div>
+        <div class="stat-row"><span>正确率</span><strong id="accuracyStat">0%</strong></div>
+      </section>
+    </aside>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
