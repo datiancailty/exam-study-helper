@@ -7,10 +7,6 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "系统的主要功能？D"
-      },
-      {
-        "key": "A",
         "text": "数据采集与监控"
       },
       {
@@ -20,6 +16,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "故障诊断"
+      },
+      {
+        "key": "D",
+        "text": "管道设计"
       }
     ],
     "answer": [
@@ -383,35 +383,6 @@ const QUESTION_BANK = [
     "question": "差压变送器一般情况都与三阀组配套使用，当正压侧阀门有泄露时，仪表指示应该（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": ")。"
-      },
-      {
-        "key": "C",
-        "text": ")。"
-      },
-      {
-        "key": "A",
-        "text": "在站控系统HMI上报警画面点击确认报警；"
-      },
-      {
-        "key": "C",
-        "text": "在气体检测报警装置报警器组件VAL-2上按下Reset；"
-      }
-    ],
-    "answer": [
-      "B"
-    ],
-    "explanation": "",
-    "hasAnswer": true
-  },
-  {
-    "id": "自控专业试题_0228-single-15",
-    "source": "自控专业试题_0228",
-    "type": "single",
-    "question": "D在气体检测报警装置指示计单元V2M上按下Test。",
-    "options": [
-      {
         "key": "A",
         "text": "爆炸性物质"
       },
@@ -429,13 +400,13 @@ const QUESTION_BANK = [
       }
     ],
     "answer": [
-      "C"
+      "B"
     ],
     "explanation": "",
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-16",
+    "id": "自控专业试题_0228-single-15",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "Modbus 通信时支持多种功能码，其中读取保持寄存器的功能码是()B",
@@ -464,7 +435,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-17",
+    "id": "自控专业试题_0228-single-16",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "管道仪表流程图中，天然气的介质代号为( )。",
@@ -493,7 +464,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-18",
+    "id": "自控专业试题_0228-single-17",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "防爆区域的仪表设备带电开盖检查前，应通过可燃气体检测仪确认可燃气体浓度不超过（）LEL。",
@@ -522,7 +493,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-19",
+    "id": "自控专业试题_0228-single-18",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "双金属温度计安装、使用的工作温度值在其最大量程的( )处。",
@@ -551,7 +522,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-20",
+    "id": "自控专业试题_0228-single-19",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "通过差压式流量计的流量越大，节流装置前、后的压差( )。",
@@ -580,7 +551,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-21",
+    "id": "自控专业试题_0228-single-20",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "Rosemount 3051压力变送器出现读数不稳定的故障时，应（ ）。",
@@ -609,7 +580,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-22",
+    "id": "自控专业试题_0228-single-21",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "下列哪项是安全仪表系统（SIS）的核心标准()A",
@@ -638,14 +609,14 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-23",
+    "id": "自控专业试题_0228-single-22",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "在防爆区域，仪表应满足的防爆等级是（）B",
     "options": [
       {
         "key": "A",
-        "text": "IP65"
+        "text": "4x"
       },
       {
         "key": "B",
@@ -656,8 +627,8 @@ const QUESTION_BANK = [
         "text": "NEM"
       },
       {
-        "key": "A",
-        "text": "4x"
+        "key": "D",
+        "text": "SIL3"
       }
     ],
     "answer": [
@@ -667,7 +638,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-24",
+    "id": "自控专业试题_0228-single-23",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "HART协议支持的通信方式是（）A",
@@ -696,7 +667,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-25",
+    "id": "自控专业试题_0228-single-24",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "ControlWave Micro系列PLC的PSSM模块，正常情况下哪个指示灯常亮（）A",
@@ -715,7 +686,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "LE"
+        "text": "1~6"
       }
     ],
     "answer": [
@@ -725,15 +696,11 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-26",
+    "id": "自控专业试题_0228-single-25",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "下列哪种因素会影响油气管道 SCADA 系统的实时性？",
     "options": [
-      {
-        "key": "A",
-        "text": "系统的实时性？D"
-      },
       {
         "key": "A",
         "text": "数据采集周期"
@@ -745,6 +712,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "系统处理能力"
+      },
+      {
+        "key": "D",
+        "text": "以上都是"
       }
     ],
     "answer": [
@@ -754,7 +725,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-27",
+    "id": "自控专业试题_0228-single-26",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "站场ESD系统采用是Honeyewell的Safety Manager系统，冗余CPU配置，正常运行时两个QPP模块的窗口显示（）A",
@@ -783,26 +754,26 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "自控专业试题_0228-single-28",
+    "id": "自控专业试题_0228-single-27",
     "source": "自控专业试题_0228",
     "type": "single",
     "question": "Honeywell Safety Manager 的编程语言是：B",
     "options": [
       {
+        "key": "A",
+        "text": "二重化DMR"
+      },
+      {
         "key": "B",
-        "text": "功能块图"
+        "text": "三重化TMQ"
       },
       {
         "key": "C",
-        "text": "结构化文本"
+        "text": "四重化QMR"
       },
       {
         "key": "D",
-        "text": "以上都是多选"
-      },
-      {
-        "key": "A",
-        "text": "二重化DMR"
+        "text": "以上都是"
       }
     ],
     "answer": [
@@ -940,10 +911,6 @@ const QUESTION_BANK = [
     "question": "AB ControlLogix系统的CPU模块的FORCE指示灯为solid amber时，表示( ) 。",
     "options": [
       {
-        "key": "B",
-        "text": "ControlLogix系统的CPU模块的FORCE指示灯为solid amber时，表示( ) 。BC"
-      },
-      {
         "key": "A",
         "text": "RS232通讯"
       },
@@ -954,6 +921,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "强制的数值存在或不存在"
+      },
+      {
+        "key": "D",
+        "text": "数据收发"
       }
     ],
     "answer": [
@@ -1343,20 +1314,20 @@ const QUESTION_BANK = [
     "question": "以下属于防爆电气设备类型的是（）ABCD",
     "options": [
       {
-        "key": "B",
-        "text": "本安型(Exi)"
-      },
-      {
-        "key": "C",
-        "text": "正压型（Ex p） D充油型(Ex o)"
-      },
-      {
         "key": "A",
         "text": "安装位置"
       },
       {
         "key": "B",
         "text": "环境温度"
+      },
+      {
+        "key": "C",
+        "text": "介质特性"
+      },
+      {
+        "key": "D",
+        "text": "电源电压"
       }
     ],
     "answer": [
@@ -1376,19 +1347,19 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "模块类型 B故障代码 C时间标签"
-      },
-      {
-        "key": "D",
-        "text": "模块数量"
-      },
-      {
-        "key": "A",
         "text": "系统的安全性？ABCD"
       },
       {
         "key": "B",
         "text": "用户认证"
+      },
+      {
+        "key": "C",
+        "text": "防火墙"
+      },
+      {
+        "key": "D",
+        "text": "入侵检测"
       }
     ],
     "answer": [
@@ -1439,15 +1410,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "调节器"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "调节阀"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "调节对象"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1471,15 +1442,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "比例调节"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "比例积分调节"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "比例微分调节"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1503,15 +1474,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "温度"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "压力"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "物位"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1535,11 +1506,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "与"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "或"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1566,15 +1537,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "经验法"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "衰减曲线法"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "临界比例度法"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1598,15 +1569,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "连续的控制电压信号"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "控制电流信号"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "数字量信号"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1630,19 +1601,19 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "1～5V 电压信号"
+        "text": "B"
       },
       {
         "key": "B",
         "text": "4～20m"
       },
       {
-        "key": "A",
-        "text": "电流信号"
-      },
-      {
         "key": "C",
         "text": "0～10V 电压信号"
+      },
+      {
+        "key": "D",
+        "text": "0～20m"
       }
     ],
     "answer": [
@@ -1660,15 +1631,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "过程输入输出接口单元"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "过程控制单元"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "CRT 操作站"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1692,7 +1663,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "数字集成电路"
+        "text": "B"
       },
       {
         "key": "B",
@@ -1722,11 +1693,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "根据干扰大小进行调节"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "为开环调节系统"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1753,11 +1724,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "孔板"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "喷嘴"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1788,7 +1759,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "B",
-        "text": "克服对象惯性滞后"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1814,11 +1785,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "热电势大小"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "冷端温度补偿"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1845,15 +1816,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "基本误差校验"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "再现性试验"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "环境温度试验"
+        "text": "D"
       },
       {
         "key": "D",
@@ -1877,11 +1848,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "节流装置"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "导压管"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1908,7 +1879,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "阀芯结构"
+        "text": "B"
       },
       {
         "key": "B",
@@ -1938,11 +1909,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "铂"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "铜"
+        "text": "C"
       },
       {
         "key": "C",
@@ -1969,7 +1940,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "绝对误差"
+        "text": "B"
       },
       {
         "key": "B",
@@ -1999,15 +1970,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "浮筒破裂"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "浮筒脱落"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "齿轮磨损"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2031,11 +2002,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "缓解对象不平衡"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "实现正确控制"
+        "text": "C"
       },
       {
         "key": "C",
@@ -2062,15 +2033,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "光电式"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "磁电式"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "电容式"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2093,20 +2064,20 @@ const QUESTION_BANK = [
     "question": "PID 调节器的作用包括哪些？",
     "options": [
       {
-        "key": "D",
-        "text": "调节器的作用包括哪些？"
-      },
-      {
         "key": "A",
-        "text": "比例作用避免过分振荡"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "积分作用消除静态偏差"
+        "text": "C"
       },
       {
         "key": "C",
         "text": "微分作用减少动态偏差"
+      },
+      {
+        "key": "D",
+        "text": "提高测量精度"
       }
     ],
     "answer": [
@@ -2125,7 +2096,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "模拟控制仪表"
+        "text": "B"
       },
       {
         "key": "B",
@@ -2155,15 +2126,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "介质特性"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "压差大小"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "流量要求"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2187,15 +2158,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "单元组合式控制仪表"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "基地式控制仪表"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "集散控制系统"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2219,15 +2190,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "巡回检查"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "定期润滑"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "定期排污"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2251,15 +2222,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "连续监测转子状态"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "发出报警信号"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "自动停机保护"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2282,20 +2253,20 @@ const QUESTION_BANK = [
     "question": "用试凑法整定 PID 参数的步骤包括哪些？",
     "options": [
       {
-        "key": "D",
-        "text": "参数的步骤包括哪些？"
-      },
-      {
         "key": "A",
-        "text": "先用比例调节"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "加入积分作用"
+        "text": "C"
       },
       {
         "key": "C",
         "text": "加入微分作用"
+      },
+      {
+        "key": "D",
+        "text": "调整线性度"
       }
     ],
     "answer": [
@@ -2314,15 +2285,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "主机电路"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "过程输入输出通道"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "人机联系部件"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2346,15 +2317,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "差压式物位仪表"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "浮子式物位仪表"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "电磁式物位仪表"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2378,15 +2349,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "手动操作误差试验"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "闭环跟踪误差调校"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "比例带刻度误差试验"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2410,15 +2381,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "无电压供给"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "无压力差"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "导压管堵塞"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2442,15 +2413,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "电压负反馈"
+        "text": ""
       },
       {
         "key": "B",
-        "text": "电流负反馈"
+        "text": ""
       },
       {
         "key": "C",
-        "text": "串联负反馈"
+        "text": "D"
       },
       {
         "key": "D",
@@ -2473,10 +2444,6 @@ const QUESTION_BANK = [
     "question": "关于GE燃气透平GG的水洗，下列说法错误的是：（ ）",
     "options": [
       {
-        "key": "B",
-        "text": ")"
-      },
-      {
         "key": "A",
         "text": "水洗的主要目的是洗掉压气机叶片上的杂质，提高压气机的效率。"
       },
@@ -2487,6 +2454,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "冬季气温低，在进行机组水洗过程中，为防止结冰，我们需要在水洗液中加入防冻液。"
+      },
+      {
+        "key": "D",
+        "text": "水洗期间，GG的转速一般在1200rpm，可持续40分钟。"
       }
     ],
     "answer": [
@@ -2502,10 +2473,6 @@ const QUESTION_BANK = [
     "question": "GE机组的离心式压缩机回流管线上的防喘阀是以（ ）作为动力源的。",
     "options": [
       {
-        "key": "B",
-        "text": "）作为动力源的。"
-      },
-      {
         "key": "A",
         "text": "工艺天然气"
       },
@@ -2516,6 +2483,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "动力电源"
+      },
+      {
+        "key": "D",
+        "text": "液压油"
       }
     ],
     "answer": [
@@ -2531,10 +2502,6 @@ const QUESTION_BANK = [
     "question": "GE机组空气进气系统共设计安装（ ）个滤芯。",
     "options": [
       {
-        "key": "B",
-        "text": "）个滤芯。"
-      },
-      {
         "key": "A",
         "text": "225"
       },
@@ -2545,6 +2512,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "260"
+      },
+      {
+        "key": "D",
+        "text": "296"
       }
     ],
     "answer": [
@@ -2560,10 +2531,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，下面说法正确的是（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "矿物油应急油泵是驱动电源是三相380 V AC。"
       },
@@ -2574,6 +2541,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "机组进气过滤室不但对GG内参与燃烧的空气过滤，还对箱体通风的空气进行过滤。"
+      },
+      {
+        "key": "D",
+        "text": "矿物油的温控阀以55摄氏度为目标控制温度，此值可以手动在现场执行机构处设定。"
       }
     ],
     "answer": [
@@ -2589,10 +2560,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，下列说法正确的是 （ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "GG进气模块下有8个可燃气体探头"
       },
@@ -2603,6 +2570,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "GG箱体温升探头共2个"
+      },
+      {
+        "key": "D",
+        "text": "GG箱体通风排气道可燃气体探头共3个"
       }
     ],
     "answer": [
@@ -2619,10 +2590,6 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "）。"
-      },
-      {
-        "key": "A",
         "text": "3、4、5"
       },
       {
@@ -2632,6 +2599,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "3、4、5、6"
+      },
+      {
+        "key": "D",
+        "text": "3、4、5、6、7"
       }
     ],
     "answer": [
@@ -2647,10 +2618,6 @@ const QUESTION_BANK = [
     "question": "在离心式压缩机的压比-流量性能曲线关系图中，压缩机工作点应位于防喘振线的（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "左侧"
       },
@@ -2661,6 +2628,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "上部"
+      },
+      {
+        "key": "D",
+        "text": "下部"
       }
     ],
     "answer": [
@@ -2676,10 +2647,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，当矿物油应急油泵运行时，将为（ ）提供冷却润滑油。",
     "options": [
       {
-        "key": "D",
-        "text": "）提供冷却润滑油。"
-      },
-      {
         "key": "A",
         "text": "GG和动力涡轮"
       },
@@ -2690,6 +2657,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "压缩机"
+      },
+      {
+        "key": "D",
+        "text": "）提供冷却润滑油。"
       }
     ],
     "answer": [
@@ -2705,10 +2676,6 @@ const QUESTION_BANK = [
     "question": "比较下列数据，最能体现GE压缩机组运行操作过程中关键转速的一组数据是 （ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "2100、3965、4460、6100、6800"
       },
@@ -2719,6 +2686,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "2900、3000、4900、5120、6100"
+      },
+      {
+        "key": "D",
+        "text": "2100、3000、4900、5120、6800"
       }
     ],
     "answer": [
@@ -2734,10 +2705,6 @@ const QUESTION_BANK = [
     "question": "下列关于GE机组机箱通风系统的说法，正确的是 （ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "GE机组机箱通风系统有2台通风机，它们都是双速风机。"
       },
@@ -2748,6 +2715,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "机箱内部温度高于5℃时，机箱通风机将由半速运行转为高速运行；低于5℃时，再转为半速运行。"
+      },
+      {
+        "key": "D",
+        "text": "）。"
       }
     ],
     "answer": [
@@ -2763,10 +2734,6 @@ const QUESTION_BANK = [
     "question": "干气密封主环（静环）和配合环（动环）材料分别为（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "碳化钨、石墨"
       },
@@ -2777,6 +2744,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "碳化钨、巴氏合金"
+      },
+      {
+        "key": "D",
+        "text": "石墨、巴氏合金"
       }
     ],
     "answer": [
@@ -2792,10 +2763,6 @@ const QUESTION_BANK = [
     "question": "GE机组从压气机哪一级抽气用来用于防冰机构 （ ）。",
     "options": [
       {
-        "key": "C",
-        "text": ")。"
-      },
-      {
         "key": "A",
         "text": "第9级"
       },
@@ -2806,6 +2773,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "第16级"
+      },
+      {
+        "key": "D",
+        "text": "第11级"
       }
     ],
     "answer": [
@@ -2821,10 +2792,6 @@ const QUESTION_BANK = [
     "question": "下面对那种现象不会对干气密封造成损害（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "机组异常振动"
       },
@@ -2835,6 +2802,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "轴承润滑不良"
+      },
+      {
+        "key": "D",
+        "text": "密封气体压力不足"
       }
     ],
     "answer": [
@@ -2850,10 +2821,6 @@ const QUESTION_BANK = [
     "question": "下面那种现象不会使径向轴承损坏（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "使用滑油不符合标准"
       },
@@ -2864,6 +2831,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "轴承间隙不正确"
+      },
+      {
+        "key": "D",
+        "text": "对中不正确"
       }
     ],
     "answer": [
@@ -2879,10 +2850,6 @@ const QUESTION_BANK = [
     "question": "下面那种现象不会引起推力轴承故障（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "使用滑油不符合标准"
       },
@@ -2893,6 +2860,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "干气密封气压力过大"
+      },
+      {
+        "key": "D",
+        "text": "轴承润滑不良"
       }
     ],
     "answer": [
@@ -2909,10 +2880,6 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "）。"
-      },
-      {
-        "key": "A",
         "text": "滑油供油油泵故障"
       },
       {
@@ -2922,6 +2889,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "油箱液位偏高"
+      },
+      {
+        "key": "D",
+        "text": "变送器故障"
       }
     ],
     "answer": [
@@ -2937,10 +2908,6 @@ const QUESTION_BANK = [
     "question": "造成GE机组GG滑油消耗量高的原因不太可能是（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "油气分离器故障"
       },
@@ -2951,6 +2918,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "油池加压管、排空管堵塞或损坏"
+      },
+      {
+        "key": "D",
+        "text": "4B号轴承受力大"
       }
     ],
     "answer": [
@@ -2966,10 +2937,6 @@ const QUESTION_BANK = [
     "question": "在负荷稳定情况下，造成GE机组油池单个回油温度比正常温度高说法正确的（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "润滑油品质退化"
       },
@@ -2980,6 +2947,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "轴承故障"
+      },
+      {
+        "key": "D",
+        "text": "控制系统的控制器故障"
       }
     ],
     "answer": [
@@ -2995,10 +2966,6 @@ const QUESTION_BANK = [
     "question": "关于GE机组的离心压缩机入口过滤器短节，下列说法正确的是（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "入口过滤器的前后法兰尺寸为36英寸"
       },
@@ -3009,6 +2976,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "安装入口过滤器时，法兰前后螺栓的安装紧固扭矩必须一样"
+      },
+      {
+        "key": "D",
+        "text": "）。"
       }
     ],
     "answer": [
@@ -3024,10 +2995,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，下面CO2系统中那个条件可以导致机组不能正常启动（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "CO2禁喷限制就地状态灯熄灭"
       },
@@ -3038,6 +3005,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "CO2瓶口阀头的保险未拆除"
+      },
+      {
+        "key": "D",
+        "text": "CO2释放阀限位无报警"
       }
     ],
     "answer": [
@@ -3053,10 +3024,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，下面哪个不是附属在GG上的齿轮箱（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "AG"
       },
@@ -3067,6 +3034,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "IG"
+      },
+      {
+        "key": "D",
+        "text": "TGB"
       }
     ],
     "answer": [
@@ -3082,10 +3053,6 @@ const QUESTION_BANK = [
     "question": "离心式压缩机转子不包括（ ）",
     "options": [
       {
-        "key": "C",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "叶轮"
       },
@@ -3096,6 +3063,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "干气密封整体"
+      },
+      {
+        "key": "D",
+        "text": "止推轮盘"
       }
     ],
     "answer": [
@@ -3111,10 +3082,6 @@ const QUESTION_BANK = [
     "question": "燃气发生器产生高振动报警的原因一般不包括（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": ")。"
-      },
-      {
         "key": "A",
         "text": "传感器系统故障；"
       },
@@ -3125,6 +3092,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "发动机支架不牢固；"
+      },
+      {
+        "key": "D",
+        "text": "GG空气流量大"
       }
     ],
     "answer": [
@@ -3167,10 +3138,6 @@ const QUESTION_BANK = [
     "question": "GE机组干气密封日常检查内容不包括（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "过滤器差压"
       },
@@ -3181,6 +3148,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "一次排空压力"
+      },
+      {
+        "key": "D",
+        "text": "二次排空流量"
       }
     ],
     "answer": [
@@ -3196,10 +3167,6 @@ const QUESTION_BANK = [
     "question": "动力涡轮最常规监测内容不包括（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "速度检测"
       },
@@ -3210,6 +3177,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "轴瓦温度"
+      },
+      {
+        "key": "D",
+        "text": "高压补偿压力"
       }
     ],
     "answer": [
@@ -3225,12 +3196,12 @@ const QUESTION_BANK = [
     "question": "一般来说，天然气离心式压缩机止推轴承位置说法错误的是（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
+        "key": "A",
+        "text": "离心压缩机转子受到一个朝向吸气端的轴向力"
       },
       {
         "key": "B",
-        "text": "在平衡鼓对侧"
+        "text": "）。"
       },
       {
         "key": "C",
@@ -3254,39 +3225,6 @@ const QUESTION_BANK = [
     "question": "下面说法错误的是（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
-        "key": "A",
-        "text": "离心压缩机转子受到一个朝向吸气端的轴向力"
-      },
-      {
-        "key": "B",
-        "text": "压缩机的大部分轴向推力由推力轴承吸收"
-      },
-      {
-        "key": "C",
-        "text": "和轴流压气机相比，离心压缩机具有级压比高、效率低的特点"
-      }
-    ],
-    "answer": [
-      "B"
-    ],
-    "explanation": "",
-    "hasAnswer": true
-  },
-  {
-    "id": "GE机组培训题库-single-29",
-    "source": "GE机组培训题库",
-    "type": "single",
-    "question": "下面说法错误的是（ ）。",
-    "options": [
-      {
-        "key": "A",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "合成油油冷器配有两个变频器控制的风机。"
       },
@@ -3297,6 +3235,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "合成油在进入回油过滤器之前有一部分滑油去冷却器后回来进行掺混"
+      },
+      {
+        "key": "D",
+        "text": "矿物油在进入供油过滤器之前有一部分滑油去冷却器后回来进行掺混"
       }
     ],
     "answer": [
@@ -3306,7 +3248,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "GE机组培训题库-single-30",
+    "id": "GE机组培训题库-single-29",
     "source": "GE机组培训题库",
     "type": "single",
     "question": "32.压缩机可调静子叶片（VSV）的作用是：（​​）",
@@ -3335,7 +3277,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "GE机组培训题库-single-31",
+    "id": "GE机组培训题库-single-30",
     "source": "GE机组培训题库",
     "type": "single",
     "question": "33.机组运行中，润滑油温度异常升高的可能原因是（​）",
@@ -3364,7 +3306,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "GE机组培训题库-single-32",
+    "id": "GE机组培训题库-single-31",
     "source": "GE机组培训题库",
     "type": "single",
     "question": "34.以下哪项是二氧化碳灭火系统触发的条件？（​）​",
@@ -3393,7 +3335,7 @@ const QUESTION_BANK = [
     "hasAnswer": true
   },
   {
-    "id": "GE机组培训题库-single-33",
+    "id": "GE机组培训题库-single-32",
     "source": "GE机组培训题库",
     "type": "single",
     "question": "35.燃机在发生喘振时，正确的处理措施是（​）",
@@ -3428,10 +3370,6 @@ const QUESTION_BANK = [
     "question": "压缩机组控制系统的测量仪表，其性能指标主要有（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "稳定性"
       },
@@ -3442,6 +3380,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "精确度"
+      },
+      {
+        "key": "D",
+        "text": "灵敏度"
       }
     ],
     "answer": [
@@ -3460,10 +3402,6 @@ const QUESTION_BANK = [
     "question": "关于GE机组停机后的可能出现的冷拖过程，以下说法正确的是（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "冷拖过程是指，机组停机中程序检测到NGG小于设定值，液压启动系统投用，将机组拖转至2100rpm并维持 300秒，完成机组的冷却，之后再降速停机；"
       },
@@ -3474,6 +3412,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "正常停机过程中，由于已经在怠速进行了冷却，所以不会再进行机组冷拖；"
+      },
+      {
+        "key": "D",
+        "text": "正常停机过程中，为了保证机组冷却效果，防止机械热应力对机组造成损坏，也将对机组进行冷拖"
       }
     ],
     "answer": [
@@ -3490,10 +3432,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组的泄压和保压停机，下列说法正确的是（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "无论泄压还是保压紧急停机，停机命令发出后，防喘阀和热旁通阀都迅速打开；"
       },
@@ -3504,6 +3442,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "保压停机信号发出后，压缩机入口阀和出口阀同时开始关闭；"
+      },
+      {
+        "key": "D",
+        "text": "）。"
       }
     ],
     "answer": [
@@ -3521,10 +3463,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，机组正常运行过程中，当正常停机（NS）信号发出后，机组正常停机过程触发，关于正常停机过程下列说法正确的是（ ）。",
     "options": [
       {
-        "key": "C",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "机组降速至GG转速为3965rpm（或3050RPM)）维持300秒，完成冷却过程；"
       },
@@ -3535,6 +3473,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "完成冷却过程后，燃料气计量阀FCV331关闭，机组开始自由降速；"
+      },
+      {
+        "key": "D",
+        "text": "完成冷却过程后，燃料气计量阀FCV331继续缓慢关闭，驱动机组缓慢降速；"
       }
     ],
     "answer": [
@@ -3551,10 +3493,6 @@ const QUESTION_BANK = [
     "question": "GE压缩机组PCL803所表示的意义，正确的是：（ ）",
     "options": [
       {
-        "key": "D",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "P表示的是管道用压缩机组；"
       },
@@ -3565,6 +3503,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "L表示的是管线；"
+      },
+      {
+        "key": "D",
+        "text": "803表示的是压缩机叶轮直径和个数。"
       }
     ],
     "answer": [
@@ -3581,10 +3523,6 @@ const QUESTION_BANK = [
     "question": "关于GE压缩机组，油冷器冷却风扇转速不受（ ）控制",
     "options": [
       {
-        "key": "D",
-        "text": "）控制"
-      },
-      {
         "key": "A",
         "text": "合成油油箱温度；"
       },
@@ -3595,6 +3533,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "合成油回油温度；"
+      },
+      {
+        "key": "D",
+        "text": "矿物油油箱温度；"
       }
     ],
     "answer": [
@@ -3612,10 +3554,6 @@ const QUESTION_BANK = [
     "question": "GG与PT如下图所示，其中属于滚动轴承的有（ ）。",
     "options": [
       {
-        "key": "B",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "3与4"
       },
@@ -3626,6 +3564,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "7"
       }
     ],
     "answer": [
@@ -3642,10 +3584,6 @@ const QUESTION_BANK = [
     "question": "关于燃气轮机紧急停车的说法，正确的是（ ）",
     "options": [
       {
-        "key": "D",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "当运行条件可能造成燃气轮机严重损坏的时候，必须停车；"
       },
@@ -3656,6 +3594,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "当发生紧急停车时，机组燃料截止阀和计量阀必须立即关闭；"
+      },
+      {
+        "key": "D",
+        "text": "）"
       }
     ],
     "answer": [
@@ -3673,10 +3615,6 @@ const QUESTION_BANK = [
     "question": "下面关于GE机组启动模式说法正确的是（ ）。",
     "options": [
       {
-        "key": "D",
-        "text": "）。"
-      },
-      {
         "key": "A",
         "text": "CRANK模式下启动机组，启动器带动GG至2100RPM；"
       },
@@ -3687,6 +3625,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "IDLE模式下启动机组，机组将点火并加速至6800rpm；"
+      },
+      {
+        "key": "D",
+        "text": "）。"
       }
     ],
     "answer": [
@@ -3704,10 +3646,6 @@ const QUESTION_BANK = [
     "question": "关于CAL CRANK模式下机组的运行，以下说法正确的是（ ）",
     "options": [
       {
-        "key": "D",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "CAL CRANK模式下启动机组，进出口阀门可以处于锁定状态；"
       },
@@ -3718,6 +3656,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "CAL CRANK模式下启动机组，可以对VSV的位置进行校验；"
+      },
+      {
+        "key": "D",
+        "text": "）"
       }
     ],
     "answer": [
@@ -3736,20 +3678,20 @@ const QUESTION_BANK = [
     "question": "Bently振动探头前置器引出线有三根分别为COM、DC、OUT。检测两点间的电压可能（ ）较为合理。",
     "options": [
       {
-        "key": "C",
-        "text": "OUT。检测两点间的电压可能（ B"
-      },
-      {
-        "key": "C",
-        "text": "）较为合理。"
-      },
-      {
         "key": "A",
         "text": "COM与DC间约10V；"
       },
       {
         "key": "B",
         "text": "COM与OUT间约10V；"
+      },
+      {
+        "key": "C",
+        "text": "COM与DC间约24V；"
+      },
+      {
+        "key": "D",
+        "text": "COM与OUT间约24V；"
       }
     ],
     "answer": [
@@ -3766,10 +3708,6 @@ const QUESTION_BANK = [
     "question": "GE公司给出防喘阀的结构图，其中包括下列哪些部分？（ ）",
     "options": [
       {
-        "key": "D",
-        "text": ")"
-      },
-      {
         "key": "A",
         "text": "过滤器/调压器；"
       },
@@ -3780,6 +3718,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "气动执行器；"
+      },
+      {
+        "key": "D",
+        "text": "液压传动装置"
       }
     ],
     "answer": [
@@ -3798,10 +3740,6 @@ const QUESTION_BANK = [
     "question": "动力涡轮X 和Y 向振动监测器，均同时发出持续的振动高报警，可能出问题的地方是： （ ）",
     "options": [
       {
-        "key": "C",
-        "text": ")"
-      },
-      {
         "key": "A",
         "text": "轴承座磨损；"
       },
@@ -3812,6 +3750,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "联轴器对中不好或联轴器不平衡或联轴器损坏；"
+      },
+      {
+        "key": "D",
+        "text": "导线破损或腐蚀 ；"
       }
     ],
     "answer": [
@@ -3829,20 +3771,20 @@ const QUESTION_BANK = [
     "question": "影响燃气轮机性能的参数有哪些？ （ ）",
     "options": [
       {
-        "key": "D",
-        "text": ")"
-      },
-      {
-        "key": "C",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "高压压气机和动力涡轮之间的平衡；"
       },
       {
         "key": "B",
         "text": "用于四号轴承的平衡，延长轴承的寿命；"
+      },
+      {
+        "key": "C",
+        "text": "）"
+      },
+      {
+        "key": "D",
+        "text": ")"
       }
     ],
     "answer": [
@@ -3861,10 +3803,6 @@ const QUESTION_BANK = [
     "question": "下列情况会出现，压缩机组必须停机的有（ ）",
     "options": [
       {
-        "key": "D",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "机组振动高高；"
       },
@@ -3875,6 +3813,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "机组出现火灾报警；"
+      },
+      {
+        "key": "D",
+        "text": "）"
       }
     ],
     "answer": [
@@ -3893,10 +3835,6 @@ const QUESTION_BANK = [
     "question": "关于燃料气加热器，下列说法正确的是 （ ）",
     "options": [
       {
-        "key": "C",
-        "text": "）"
-      },
-      {
         "key": "A",
         "text": "正常停机信号触发后，燃料气加热器即停用；"
       },
@@ -3907,6 +3845,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "紧急停机信号触发后，燃料气加热器即停用；"
+      },
+      {
+        "key": "D",
+        "text": "紧急停机信号触发后，待燃机转速降至6800rpm以下，燃料气加热器停用；"
       }
     ],
     "answer": [
@@ -3954,10 +3896,6 @@ const QUESTION_BANK = [
     "question": "19. GE机组 矿物油系统双联过滤器切换阀处于中间位置时一般不会导致（A B C D​）​",
     "options": [
       {
-        "key": "C",
-        "text": "D）"
-      },
-      {
         "key": "A",
         "text": "油压大幅度降低"
       },
@@ -3968,6 +3906,10 @@ const QUESTION_BANK = [
       {
         "key": "C",
         "text": "过滤器压差大幅度上升"
+      },
+      {
+        "key": "D",
+        "text": "出口油温大幅度升高"
       }
     ],
     "answer": [],
