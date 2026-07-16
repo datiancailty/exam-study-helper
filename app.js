@@ -1,34 +1,81 @@
-const questions=[
- {category:'计算机基础',title:'下列哪一项属于操作系统？',options:['Microsoft Word','Windows 11','Adobe Photoshop','Google Chrome'],answer:1,explanation:'Windows 11 是由微软开发的操作系统，负责管理计算机硬件、软件资源并为应用程序提供运行环境。'},
- {category:'信息技术',title:'在计算机中，CPU 的中文名称是什么？',options:['中央处理器','随机存储器','只读存储器','图形处理器'],answer:0,explanation:'CPU 是 Central Processing Unit 的缩写，中文名称为“中央处理器”，是计算机的核心运算与控制部件。'},
- {category:'网络基础',title:'通常用于访问网页的协议是？',options:['HTTP / HTTPS','FTP','SMTP','SSH'],answer:0,explanation:'浏览器访问网页通常使用 HTTP 或更安全的 HTTPS 协议。'},
- {category:'办公软件',title:'Excel 工作簿文件最常见的扩展名是？',options:['.docx','.pptx','.xlsx','.txt'],answer:2,explanation:'.xlsx 是现代 Microsoft Excel 工作簿的默认文件扩展名。'},
- {category:'网络安全',title:'下面哪种密码相对更安全？',options:['12345678','password','生日日期','包含大小写字母、数字和符号的长密码'],answer:3,explanation:'长度足够且混合大小写字母、数字和特殊符号的密码更难被猜测或暴力破解。'}
-];
-let current=0,selected=null,answers=Array(questions.length).fill(null),locked=false,timer=null;
-const $=id=>document.getElementById(id);
-function render(){
- const q=questions[current],answered=answers[current]; selected=answered?.selected??null; locked=Boolean(answered);
- $('questionTitle').textContent=`${current+1}. ${q.title}`;$('category').textContent=q.category;
- $('progressText').textContent=`第 ${current+1} / ${questions.length} 题`;const pct=Math.round((current+1)/questions.length*100);$('progressPercent').textContent=pct+'%';$('progressBar').style.width=pct+'%';
- $('options').innerHTML=q.options.map((text,i)=>`<button class="option ${selected===i?'selected':''}" data-index="${i}"><span class="letter">${String.fromCharCode(65+i)}</span><span>${text}</span></button>`).join('');
- document.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>choose(Number(btn.dataset.index))));
- $('feedback').className='feedback hidden';$('hint').textContent=locked?'本题已作答，可查看解析或切换题目':'请选择一个答案';
- if(locked) showFeedback(answered,false);
- $('prevBtn').disabled=current===0;$('nextBtn').disabled=current===questions.length-1;$('submitBtn').disabled=locked;$('submitBtn').textContent=locked?'已提交':'提交答案';
- renderGrid();updateStats();
+let allQuestions = QUESTION_BANK;
+let questions = [];
+let current = 0;
+let selected = [];
+let answers = [];
+let locked = false;
+let timer = null;
+
+const $ = id => document.getElementById(id);
+const typeName = t => t === 'single' ? '单选题' : t === 'multi' ? '多选题' : '简答题';
+const sourceName = s => s.includes('自控') ? '自控专业试题_0228' : 'GE机组培训题库';
+
+function initFilters() {
+  const sources = [...new Set(allQuestions.map(q => q.source))];
+  $('sourceFilter').innerHTML = '<option value="all">全部题库</option>' + sources.map(s => `<option value="${s}">${sourceName(s)}</option>`).join('');
+  $('typeFilter').innerHTML = '<option value="all">全部题型</option><option value="single">单选题</option><option value="multi">多选题</option><option value="short">简答题</option>';
+  $('sourceFilter').onchange = applyFilters;
+  $('typeFilter').onchange = applyFilters;
 }
-function choose(i){if(locked)return;selected=i;document.querySelectorAll('.option').forEach((el,n)=>el.classList.toggle('selected',n===i));$('hint').textContent=`已选择 ${String.fromCharCode(65+i)}，请提交答案`;}
-function submit(){if(locked)return;if(selected===null){toast('请先选择一个答案');return}const correct=selected===questions[current].answer;answers[current]={selected,correct};locked=true;showFeedback(answers[current],true);renderGrid();updateStats();$('submitBtn').disabled=true;$('submitBtn').textContent='已提交';if(correct&&$('modeToggle').checked&&current<questions.length-1){clearTimeout(timer);timer=setTimeout(()=>{current++;render()},1300)}}
-function showFeedback(result,announce){
- const q=questions[current],els=document.querySelectorAll('.option');els.forEach((el,i)=>{el.disabled=true;el.classList.remove('selected');if(i===q.answer)el.classList.add('correct');else if(i===result.selected)el.classList.add('incorrect')});
- $('feedback').className='feedback '+(result.correct?'success':'error');$('feedbackIcon').textContent=result.correct?'✓':'!';$('feedbackTitle').textContent=result.correct?'回答正确！即将进入下一题':'回答错误，先看看解析再试下一题';$('feedbackAnswer').textContent=`正确答案：${String.fromCharCode(65+q.answer)}. ${q.options[q.answer]}`;$('explanation').textContent='解析：'+q.explanation;if(announce&&result.correct)toast('回答正确，做得很好！');
+function applyFilters() {
+  const source = $('sourceFilter').value, type = $('typeFilter').value;
+  questions = allQuestions.filter(q => (source === 'all' || q.source === source) && (type === 'all' || q.type === type));
+  current = 0; selected = []; answers = []; locked = false;
+  if (!questions.length) { $('questionTitle').textContent = '当前筛选没有题目'; $('options').innerHTML = ''; return; }
+  render();
 }
-function renderGrid(){
- $('questionGrid').innerHTML=questions.map((_,i)=>{let cls=i===current?'current':answers[i]?.correct?'done':answers[i]?'wrong':'';return `<button class="q-number ${cls}" data-q="${i}">${i+1}</button>`}).join('');document.querySelectorAll('.q-number').forEach(b=>b.onclick=()=>{clearTimeout(timer);current=Number(b.dataset.q);render()});
- $('completedCount').textContent=`${answers.filter(Boolean).length}/${questions.length}`;$('wrongCount').textContent=answers.filter(a=>a&&!a.correct).length;
+function render() {
+  const q = questions[current];
+  selected = answers[current]?.selected || [];
+  locked = Boolean(answers[current]);
+  $('questionTitle').textContent = `${current + 1}. ${q.question}`;
+  $('category').textContent = `${sourceName(q.source)} · ${typeName(q.type)}`;
+  $('questionType').textContent = typeName(q.type);
+  const pct = Math.round((current + 1) / questions.length * 100);
+  $('progressText').textContent = `第 ${current + 1} / ${questions.length} 题`;
+  $('progressPercent').textContent = pct + '%'; $('progressBar').style.width = pct + '%';
+  $('options').innerHTML = q.type === 'short' ? `<textarea id="shortAnswer" class="short-answer" placeholder="请在这里写下你的答案，提交后查看参考答案……">${locked ? (answers[current].input || '') : ''}</textarea>` : q.options.map(o => `<button class="option ${selected.includes(o.key) ? 'selected' : ''}" data-key="${o.key}"><span class="letter">${o.key}</span><span>${o.text}</span></button>`).join('');
+  document.querySelectorAll('.option').forEach(btn => btn.onclick = () => choose(btn.dataset.key));
+  $('feedback').className = 'feedback hidden';
+  $('hint').textContent = q.type === 'multi' ? '请选择全部正确答案' : q.type === 'short' ? '简答题提交后显示参考答案，不进行机械判分' : '请选择一个答案';
+  if (locked) showFeedback(answers[current], false);
+  $('submitBtn').disabled = locked; $('submitBtn').textContent = locked ? '已提交' : '提交答案';
+  $('prevBtn').disabled = current === 0; $('nextBtn').disabled = current === questions.length - 1;
+  renderGrid(); updateStats();
 }
-function updateStats(){const done=answers.filter(Boolean),correct=done.filter(a=>a.correct).length,wrong=done.length-correct;$('correctStat').textContent=correct;$('wrongStat').textContent=wrong;$('wrongCount').textContent=wrong;$('accuracyStat').textContent=done.length?Math.round(correct/done.length*100)+'%':'0%'}
-function move(step){clearTimeout(timer);const target=current+step;if(target>=0&&target<questions.length){current=target;render()}}
-function toast(msg){const el=$('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1600)}
-$('submitBtn').onclick=submit;$('prevBtn').onclick=()=>move(-1);$('nextBtn').onclick=()=>move(1);render();
+function choose(key) {
+  if (locked) return;
+  if (questions[current].type === 'single') selected = [key];
+  else selected = selected.includes(key) ? selected.filter(x => x !== key) : [...selected, key];
+  document.querySelectorAll('.option').forEach(el => el.classList.toggle('selected', selected.includes(el.dataset.key)));
+  $('hint').textContent = questions[current].type === 'multi' ? `已选择 ${selected.length} 项，请提交答案` : `已选择 ${key}，请提交答案`;
+}
+function submit() {
+  if (locked) return;
+  const q = questions[current];
+  if (q.type === 'short') {
+    const input = $('shortAnswer').value.trim(); if (!input) return toast('请先填写答案');
+    answers[current] = { selected: [], input, correct: null }; locked = true; showFeedback(answers[current], true); renderGrid(); updateStats(); return;
+  }
+  if (!selected.length) return toast('请先选择答案');
+  const correct = selected.slice().sort().join('') === q.answer.slice().sort().join('');
+  answers[current] = { selected: [...selected], correct }; locked = true; showFeedback(answers[current], true); renderGrid(); updateStats();
+  if (correct && $('modeToggle').checked && current < questions.length - 1) timer = setTimeout(() => { current++; render(); }, 1300);
+}
+function showFeedback(result, announce) {
+  const q = questions[current];
+  if (q.type === 'short') {
+    $('feedback').className = 'feedback success'; $('feedbackIcon').textContent = '✓'; $('feedbackTitle').textContent = '已记录，请对照参考答案学习'; $('feedbackAnswer').textContent = '参考答案：'; $('explanation').textContent = q.explanation || '原题未提供参考答案。'; return;
+  }
+  const els = document.querySelectorAll('.option'); els.forEach(el => { el.disabled = true; const key = el.dataset.key; if (q.answer.includes(key)) el.classList.add('correct'); else if (result.selected.includes(key)) el.classList.add('incorrect'); });
+  $('feedback').className = 'feedback ' + (result.correct ? 'success' : 'error'); $('feedbackIcon').textContent = result.correct ? '✓' : '!'; $('feedbackTitle').textContent = result.correct ? '回答正确！即将进入下一题' : '回答错误，先看看解析再继续学习'; $('feedbackAnswer').textContent = `正确答案：${q.answer.join('、')}`; $('explanation').textContent = q.explanation || '题库中未提供额外解析。'; if (announce && result.correct) toast('回答正确，做得很好！');
+}
+function renderGrid() {
+  $('questionGrid').innerHTML = questions.map((q, i) => { const a = answers[i]; const cls = i === current ? 'current' : a?.correct === true ? 'done' : a?.correct === false ? 'wrong' : a ? 'done' : ''; return `<button class="q-number ${cls}" data-q="${i}">${i + 1}</button>`; }).join('');
+  document.querySelectorAll('.q-number').forEach(b => b.onclick = () => { clearTimeout(timer); current = Number(b.dataset.q); render(); });
+  $('completedCount').textContent = `${answers.filter(Boolean).length}/${questions.length}`;
+}
+function updateStats() { const done = answers.filter(Boolean), graded = done.filter(a => typeof a.correct === 'boolean'), correct = graded.filter(a => a.correct).length, wrong = graded.filter(a => !a.correct).length; $('correctStat').textContent = correct; $('wrongStat').textContent = wrong; $('wrongCount').textContent = wrong; $('accuracyStat').textContent = graded.length ? Math.round(correct / graded.length * 100) + '%' : '—'; }
+function move(step) { clearTimeout(timer); const target = current + step; if (target >= 0 && target < questions.length) { current = target; render(); } }
+function toast(msg) { const el = $('toast'); el.textContent = msg; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 1600); }
+$('submitBtn').onclick = submit; $('prevBtn').onclick = () => move(-1); $('nextBtn').onclick = () => move(1); initFilters(); applyFilters();

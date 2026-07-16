@@ -17,6 +17,7 @@
     <div class="header-actions"><button class="ghost small">错题本 <b id="wrongCount">0</b></button><button class="ghost small">退出练习</button></div>
   </header>
 
+  <div class="filters"><label>题库<select id="sourceFilter"></select></label><label>题型<select id="typeFilter"></select></label><span>答案已从 Word 题库中分离，提交后才会显示</span></div>
   <main class="layout">
     <aside class="panel answer-sheet">
       <div class="panel-title"><h2>答题卡</h2><span id="completedCount">0/5</span></div>
@@ -26,7 +27,7 @@
     </aside>
 
     <section class="question-card">
-      <div class="tags"><span class="tag blue">单选题</span><span id="category" class="tag">计算机基础</span></div>
+      <div class="tags"><span id="questionType" class="tag blue">单选题</span><span id="category" class="tag">题库</span></div>
       <h1 id="questionTitle">题目加载中…</h1>
       <div id="options" class="options"></div>
       <p id="hint" class="hint">请选择一个答案</p>
@@ -58,6 +59,6 @@
     </aside>
   </main>
   <div id="toast" class="toast" role="status"></div>
-  <script src="app.js?v=1"></script>
+  <script src="questions-data.js?v=1"></script><script src="app.js?v=1"></script>
 </body>
 </html>
