@@ -1410,15 +1410,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "调节器"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "调节阀"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "调节对象"
       },
       {
         "key": "D",
@@ -1442,15 +1442,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "比例调节"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "比例积分调节"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "比例微分调节"
       },
       {
         "key": "D",
@@ -1474,15 +1474,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "温度"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "压力"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "物位"
       },
       {
         "key": "D",
@@ -1506,11 +1506,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "与"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "或"
       },
       {
         "key": "C",
@@ -1537,15 +1537,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "经验法"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "衰减曲线法"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "临界比例度法"
       },
       {
         "key": "D",
@@ -1569,15 +1569,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "连续的控制电压信号"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "控制电流信号"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "数字量信号"
       },
       {
         "key": "D",
@@ -1601,11 +1601,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "B"
+        "text": "1～5V 电压信号"
       },
       {
         "key": "B",
-        "text": "4～20m"
+        "text": "4～20mA 电流信号"
       },
       {
         "key": "C",
@@ -1613,7 +1613,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "0～20m"
+        "text": "0～20mA 电流信号"
       }
     ],
     "answer": [
@@ -1631,15 +1631,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "过程输入输出接口单元"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "过程控制单元"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "CRT 操作站"
       },
       {
         "key": "D",
@@ -1663,7 +1663,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "B"
+        "text": "数字集成电路"
       },
       {
         "key": "B",
@@ -1693,11 +1693,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "根据干扰大小进行调节"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "为开环调节系统"
       },
       {
         "key": "C",
@@ -1724,11 +1724,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "孔板"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "喷嘴"
       },
       {
         "key": "C",
@@ -1759,7 +1759,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "克服对象惯性滞后"
       },
       {
         "key": "C",
@@ -1785,11 +1785,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "热电势大小"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "冷端温度补偿"
       },
       {
         "key": "C",
@@ -1816,15 +1816,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "基本误差校验"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "再现性试验"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "环境温度试验"
       },
       {
         "key": "D",
@@ -1848,11 +1848,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "节流装置"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "导压管"
       },
       {
         "key": "C",
@@ -1879,7 +1879,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "B"
+        "text": "阀芯结构"
       },
       {
         "key": "B",
@@ -1909,11 +1909,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "铂"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "铜"
       },
       {
         "key": "C",
@@ -1940,7 +1940,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "B"
+        "text": "绝对误差"
       },
       {
         "key": "B",
@@ -1970,15 +1970,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "浮筒破裂"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "浮筒脱落"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "齿轮磨损"
       },
       {
         "key": "D",
@@ -2002,11 +2002,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "缓解对象不平衡"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "实现正确控制"
       },
       {
         "key": "C",
@@ -2033,15 +2033,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "光电式"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "磁电式"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "电容式"
       },
       {
         "key": "D",
@@ -2065,11 +2065,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "比例作用避免过分振荡"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "积分作用消除静态偏差"
       },
       {
         "key": "C",
@@ -2096,7 +2096,7 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "B"
+        "text": "模拟控制仪表"
       },
       {
         "key": "B",
@@ -2126,15 +2126,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "介质特性"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "压差大小"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "流量要求"
       },
       {
         "key": "D",
@@ -2158,15 +2158,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "单元组合式控制仪表"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "基地式控制仪表"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "集散控制系统"
       },
       {
         "key": "D",
@@ -2190,15 +2190,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "巡回检查"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "定期润滑"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "定期排污"
       },
       {
         "key": "D",
@@ -2222,15 +2222,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "连续监测转子状态"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "发出报警信号"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "自动停机保护"
       },
       {
         "key": "D",
@@ -2254,11 +2254,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "先用比例调节"
       },
       {
         "key": "B",
-        "text": "C"
+        "text": "加入积分作用"
       },
       {
         "key": "C",
@@ -2285,15 +2285,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "主机电路"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "过程输入输出通道"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "人机联系部件"
       },
       {
         "key": "D",
@@ -2317,15 +2317,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "差压式物位仪表"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "浮子式物位仪表"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "电磁式物位仪表"
       },
       {
         "key": "D",
@@ -2349,15 +2349,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "手动操作误差试验"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "闭环跟踪误差调校"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "比例带刻度误差试验"
       },
       {
         "key": "D",
@@ -2381,15 +2381,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "无电压供给"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "无压力差"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "导压管堵塞"
       },
       {
         "key": "D",
