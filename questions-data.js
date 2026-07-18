@@ -583,19 +583,19 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-single-21",
     "source": "自控专业试题_0228",
     "type": "single",
-    "question": "下列哪项是安全仪表系统（SIS）的核心标准()A",
+    "question": "下列哪项是安全仪表系统（SIS）的核心标准（ ）",
     "options": [
       {
         "key": "A",
-        "text": "IEC61508"
+        "text": "IEC 61508"
       },
       {
         "key": "B",
-        "text": "ISO9001"
+        "text": "ISO 9001"
       },
       {
         "key": "C",
-        "text": "API670"
+        "text": "API 670"
       },
       {
         "key": "D",
@@ -612,11 +612,11 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-single-22",
     "source": "自控专业试题_0228",
     "type": "single",
-    "question": "在防爆区域，仪表应满足的防爆等级是（）B",
+    "question": "在防爆区域，仪表应满足的防爆等级是（ ）",
     "options": [
       {
         "key": "A",
-        "text": "4x"
+        "text": "IP65"
       },
       {
         "key": "B",
@@ -624,7 +624,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "C",
-        "text": "NEM"
+        "text": "NEMA 4x"
       },
       {
         "key": "D",
@@ -641,7 +641,7 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-single-23",
     "source": "自控专业试题_0228",
     "type": "single",
-    "question": "HART协议支持的通信方式是（）A",
+    "question": "HART协议支持的通信方式是（ ）",
     "options": [
       {
         "key": "A",
@@ -670,7 +670,7 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-single-24",
     "source": "自控专业试题_0228",
     "type": "single",
-    "question": "ControlWave Micro系列PLC的PSSM模块，正常情况下哪个指示灯常亮（）A",
+    "question": "ControlWave Micro系列PLC的PSSM模块，正常情况下哪个指示灯常亮（ ）",
     "options": [
       {
         "key": "A",
@@ -678,7 +678,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "B",
-        "text": "W"
+        "text": "WD"
       },
       {
         "key": "C",
@@ -686,7 +686,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "1~6"
+        "text": "LED 1~6"
       }
     ],
     "answer": [
@@ -728,7 +728,7 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-single-26",
     "source": "自控专业试题_0228",
     "type": "single",
-    "question": "站场ESD系统采用是Honeyewell的Safety Manager系统，冗余CPU配置，正常运行时两个QPP模块的窗口显示（）A",
+    "question": "站场ESD系统采用Honeywell的Safety Manager系统，冗余CPU配置，正常运行时两个QPP模块的窗口显示（ ）",
     "options": [
       {
         "key": "A",
@@ -757,19 +757,19 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-single-27",
     "source": "自控专业试题_0228",
     "type": "single",
-    "question": "Honeywell Safety Manager 的编程语言是：B",
+    "question": "Honeywell Safety Manager 的编程语言是（ ）",
     "options": [
       {
         "key": "A",
-        "text": "二重化DMR"
+        "text": "梯形图"
       },
       {
         "key": "B",
-        "text": "三重化TMQ"
+        "text": "功能块图"
       },
       {
         "key": "C",
-        "text": "四重化QMR"
+        "text": "结构化文本"
       },
       {
         "key": "D",
@@ -777,7 +777,7 @@ const QUESTION_BANK = [
       }
     ],
     "answer": [
-      "C"
+      "B"
     ],
     "explanation": "",
     "hasAnswer": true
@@ -877,15 +877,15 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-multi-4",
     "source": "自控专业试题_0228",
     "type": "multi",
-    "question": "ControlWave过程控制器CPU模块运行期间Port80代码窗口显示的代码包括( )等。",
+    "question": "ControlWave过程控制器CPU模块运行期间Port80代码窗口显示的代码包括（ ）等。",
     "options": [
       {
         "key": "A",
-        "text": "B"
+        "text": "BA"
       },
       {
         "key": "B",
-        "text": "B"
+        "text": "BC"
       },
       {
         "key": "C",
@@ -1248,7 +1248,7 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-multi-16",
     "source": "自控专业试题_0228",
     "type": "multi",
-    "question": "16. 通过站控系统BristolBabcock PLC的冗余控制器指示灯可以查看（）ABC",
+    "question": "通过站控系统Bristol Babcock PLC的冗余控制器指示灯可以查看（ ）",
     "options": [
       {
         "key": "A",
@@ -1279,7 +1279,7 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-multi-17",
     "source": "自控专业试题_0228",
     "type": "multi",
-    "question": "SCADA系统的组成部分包括（）ABCD",
+    "question": "SCADA系统的组成部分包括（ ）",
     "options": [
       {
         "key": "A",
@@ -1311,23 +1311,23 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-multi-18",
     "source": "自控专业试题_0228",
     "type": "multi",
-    "question": "以下属于防爆电气设备类型的是（）ABCD",
+    "question": "以下属于防爆电气设备类型的是（ ）",
     "options": [
       {
         "key": "A",
-        "text": "安装位置"
+        "text": "隔爆型（Ex d）"
       },
       {
         "key": "B",
-        "text": "环境温度"
+        "text": "本安型（Ex i）"
       },
       {
         "key": "C",
-        "text": "介质特性"
+        "text": "正压型（Ex p）"
       },
       {
         "key": "D",
-        "text": "电源电压"
+        "text": "充油型（Ex o）"
       }
     ],
     "answer": [
@@ -1343,30 +1343,29 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-multi-19",
     "source": "自控专业试题_0228",
     "type": "multi",
-    "question": "通过Safety builder可以查看诊断信息，诊断信息的内容包括：ABC",
+    "question": "通过Safety Builder可以查看诊断信息，诊断信息的内容包括（ ）",
     "options": [
       {
         "key": "A",
-        "text": "系统的安全性？ABCD"
+        "text": "模块类型"
       },
       {
         "key": "B",
-        "text": "用户认证"
+        "text": "故障代码"
       },
       {
         "key": "C",
-        "text": "防火墙"
+        "text": "时间标签"
       },
       {
         "key": "D",
-        "text": "入侵检测"
+        "text": "模块数量"
       }
     ],
     "answer": [
       "A",
       "B",
-      "C",
-      "D"
+      "C"
     ],
     "explanation": "",
     "hasAnswer": true
@@ -1375,11 +1374,11 @@ const QUESTION_BANK = [
     "id": "自控专业试题_0228-multi-20",
     "source": "自控专业试题_0228",
     "type": "multi",
-    "question": "油气管道 SCADA 系统的主要功能包括：ABC",
+    "question": "油气管道SCADA系统的主要功能包括（ ）",
     "options": [
       {
         "key": "A",
-        "text": "系统的主要功能包括：ABC"
+        "text": "数据采集与监控"
       },
       {
         "key": "B",
@@ -2413,15 +2412,15 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": ""
+        "text": "电压负反馈"
       },
       {
         "key": "B",
-        "text": ""
+        "text": "电流负反馈"
       },
       {
         "key": "C",
-        "text": "D"
+        "text": "串联负反馈"
       },
       {
         "key": "D",
@@ -2660,7 +2659,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）提供冷却润滑油。"
+        "text": "动力涡轮"
       }
     ],
     "answer": [
@@ -2702,7 +2701,7 @@ const QUESTION_BANK = [
     "id": "GE机组培训题库-single-10",
     "source": "GE机组培训题库",
     "type": "single",
-    "question": "下列关于GE机组机箱通风系统的说法，正确的是 （ ）。",
+    "question": "下列关于GE机组机箱通风系统的说法，正确的是（ ）。",
     "options": [
       {
         "key": "A",
@@ -2710,7 +2709,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "B",
-        "text": "当出现机箱压差低时，备用通风机启动,此时两台通风机都处于运行状态。"
+        "text": "当出现机箱压差低时，备用通风机启动，此时两台通风机都处于运行状态。"
       },
       {
         "key": "C",
@@ -2718,7 +2717,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）。"
+        "text": "当机组运行外界环境刮大风或冬季大雾霜雪天气期间，容易出现备用风机启动。"
       }
     ],
     "answer": [
@@ -2979,7 +2978,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）。"
+        "text": "在压缩机组4K保养作业期间或定期需要对未拆除的入口过滤器内部临时滤网的完好情况进行检查。"
       }
     ],
     "answer": [
@@ -3197,11 +3196,11 @@ const QUESTION_BANK = [
     "options": [
       {
         "key": "A",
-        "text": "离心压缩机转子受到一个朝向吸气端的轴向力"
+        "text": "与压缩机进气端同侧"
       },
       {
         "key": "B",
-        "text": "）。"
+        "text": "在平衡鼓对侧"
       },
       {
         "key": "C",
@@ -3445,7 +3444,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）。"
+        "text": "泄压停机信号发出后，进口阀XV4101开始关闭，关闭后，放空阀XV784打开；"
       }
     ],
     "answer": [
@@ -3597,7 +3596,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）"
+        "text": "紧急停车后，一般不允许立即起动机组；"
       }
     ],
     "answer": [
@@ -3628,7 +3627,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）。"
+        "text": "W.WASH模式下启动机组，机组将达到1200rpm；"
       }
     ],
     "answer": [
@@ -3659,7 +3658,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）"
+        "text": "CAL CRANK模式下启动机组，可以对燃料气计量阀进行手动校验；"
       }
     ],
     "answer": [
@@ -3768,23 +3767,23 @@ const QUESTION_BANK = [
     "id": "GE机组培训题库-multi-14",
     "source": "GE机组培训题库",
     "type": "multi",
-    "question": "影响燃气轮机性能的参数有哪些？ （ ）",
+    "question": "影响燃气轮机性能的参数有哪些？（ ）",
     "options": [
       {
         "key": "A",
-        "text": "高压压气机和动力涡轮之间的平衡；"
+        "text": "排气的压力损失；"
       },
       {
         "key": "B",
-        "text": "用于四号轴承的平衡，延长轴承的寿命；"
+        "text": "GG进气空气温度。"
       },
       {
         "key": "C",
-        "text": "）"
+        "text": "燃机所在地海拔。"
       },
       {
         "key": "D",
-        "text": ")"
+        "text": "燃料气热值。"
       }
     ],
     "answer": [
@@ -3816,7 +3815,7 @@ const QUESTION_BANK = [
       },
       {
         "key": "D",
-        "text": "）"
+        "text": "机组出现超速报警；"
       }
     ],
     "answer": [
